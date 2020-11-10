@@ -1,5 +1,5 @@
 * {
-    margin : 0;
+   margin : 0;
 }
 
 @font-face { /* 넥슨 NCF */ 
@@ -52,6 +52,18 @@ header {
 
 header h1 {
     padding : 20px 0px 20px 0px;
+}
+
+header small {
+    color : gray;
+    
+}
+
+section {
+    margin : 0 auto;
+    max-width : 950px;
+    padding-top : 60px;
+    font-size : 17px;
 }
 
 .side_category { /* 오른쪽 fixed로 고정 right : 0 으로 오른쪽 강제배치 */
