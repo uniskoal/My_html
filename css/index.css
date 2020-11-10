@@ -2,23 +2,39 @@
     margin : 0;
 }
 
-html , body {
+@font-face { /* 넥슨 NCF */ 
+    font-family: 'NEXON Lv1 Gothic OTF'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff'); font-weight: normal; font-style: normal; 
+}
+
+
+html , body { /* 상위 트리에서 전체 100%을 해줘야지 하위 트리가 쓸 수 있다.*/
     width : 100%;
     height : 100%;
+    font-family : 'NEXON Lv1 Gothic OTF'; /* 넥슨 공식 텍스트 */
 }
 
-main {
+.background {
+    position : fixed;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    background-image : url('../img/green.jpg');
+}
+
+main { /* float : left 로 왼쪽 배치  relative로 유연한 디자인 */
     float : left;
     position : relative;
-    background-color : cyan;
-    width : 70%;
-    height : 2000px;
+    width : 77%;
+    height : 100%;
+    background-color : white;
 }
 
-.side_category {
-    background-color : orange;
-    width : 30%;
+.side_category { /* 오른쪽 fixed로 고정 right : 0 으로 오른쪽 강제배치 */
+    width : 23%;
     height : 100%;
     position : fixed;
     right : 0;
+    
 }
