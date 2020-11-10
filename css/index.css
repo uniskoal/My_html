@@ -12,23 +12,35 @@ html , body { /* 상위 트리에서 전체 100%을 해줘야지 하위 트리�
     width : 100%;
     height : 100%;
     font-family : 'NEXON Lv1 Gothic OTF'; /* 넥슨 공식 텍스트 */
+    position : relative;
 }
 
-.background {
+.background { /* 배경화면 css */
     position : fixed;
     top : 0;
     left : 0;
     width : 100%;
     height : 100%;
-    background-image : url('../img/green.jpg');
+    background-image : url('../img/gradient.jpg');
+    z-index : -2;
 }
 
-main { /* float : left 로 왼쪽 배치  relative로 유연한 디자인 */
+.background_overlay { /* side 배경화면을 어둡게 해서 콘텐츠 강조 */
+    position : fixed;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    background-color : rgba(0,0,0,0.5);
+    z-index : -1;
+} 
+
+main { /* float : left 로 왼쪽 배치 */
     float : left;
-    position : relative;
     width : 77%;
     height : 100%;
     background-color : white;
+    position : relative;
 }
 
 .side_category { /* 오른쪽 fixed로 고정 right : 0 으로 오른쪽 강제배치 */
@@ -36,5 +48,4 @@ main { /* float : left 로 왼쪽 배치  relative로 유연한 디자인 */
     height : 100%;
     position : fixed;
     right : 0;
-    
 }
