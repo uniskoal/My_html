@@ -43,9 +43,21 @@ main { /* float : left 로 왼쪽 배치 */
     position : relative;
 }
 
+header {
+    margin : 0 auto;
+    padding-top : 80px;
+    max-width : 950px;
+    border-bottom : 1px solid #efefef;
+}
+
+header h1 {
+    padding : 20px 0px 20px 0px;
+}
+
 .side_category { /* 오른쪽 fixed로 고정 right : 0 으로 오른쪽 강제배치 */
     width : 23%;
     height : 100%;
     position : fixed;
     right : 0;
 }
+
