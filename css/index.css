@@ -1,10 +1,18 @@
 * {
    margin : 0;
+   padding : 0;
 }
 
 @font-face { /* 넥슨 NCF */ 
     font-family: 'NEXON Lv1 Gothic OTF'; 
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff'); font-weight: normal; font-style: normal; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') 
+    format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+p {
+    padding : 15px 0px 15px 0px;
 }
 
 
@@ -45,7 +53,7 @@ main { /* float : left 로 왼쪽 배치 */
 
 header {
     margin : 0 auto;
-    padding-top : 80px;
+    padding-top : 50px;
     max-width : 950px;
     border-bottom : 1px solid #efefef;
 }
@@ -64,7 +72,11 @@ section {
     max-width : 950px;
     padding-top : 60px;
     font-size : 17px;
+    font-weight : bold;
+    line-height : 1.5em;
 }
+
+
 
 .side_category { /* 오른쪽 fixed로 고정 right : 0 으로 오른쪽 강제배치 */
     width : 23%;
