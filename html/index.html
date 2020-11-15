@@ -24,11 +24,32 @@
                     HTML은 단순히 글자만을 표현하는 것이 아닌, 밑줄,인용문,제목 등등의 의미가 포함된 텍스트를 표현합니다. 이 장에서는 HTML에서 사용할 수 있는
                     다양한 텍스트 태그를 정리해볼까 합니다.
                 </p>
-                <h2 style="padding-top : 50px;">블록 레벨 태그 VS 인라인 레벨 태그</h2>
-                <p style="padding-top : 60px;">텍스트 관련 태그들은 블록과 인라인 레벨 두 가지로 분류합니다. </p>
+                <h2 style="padding-top : 50px;">블록 레벨 태그와 인라인 레벨 태그</h2>
+                <p>웹 사이트를 구성하는 HTML 태그들은 이용자 입장에서는 티가 나지 않지만 개발자 입장에서 구조적으로 봤을 때 
+                자신들이 가지는 영역이 존재합니다. 웹 브라우저상에서 보이는 이 영역은 display 속성을 통해 결정되는데 그 속성에 따라
+                블록 태그와 인라인 태그로 나눠집니다.</p>
+                <p>HTML과 함께 웹의 디자인을 담당하는 CSS를 적용할 때도 이 display 값이 영향을 미치게 됩니다 
+                따라서 이 태그가 어떤 영역을 차지하고 있는지 알아둘 필요가 있습니다.
+                </p>
+                <h3 style="padding-top : 50px;">블록 레벨 태그</h3>
+                <p>블록 레벨 태그는 태그가 감싸고 있는 요소 말고도 상위 태그(부모 요소)가 가지고 있는 너비까지 영역으로 갖는 특징이 있습니다. 
+                또한 다음 태그에 줄바꿈이 적용되는 효과가 있어 실제로 블록 쌓기를 하는듯한 구조를 연상케 하게 됩니다.</p>
+                <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="uniskoal98" data-slug-hash="OJXddVj" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="OJXddVj">
+                    <span>See the Pen <a href="https://codepen.io/uniskoal98/pen/OJXddVj">
+                    OJXddVj</a> by 김준서 (<a href="https://codepen.io/uniskoal98">@uniskoal98</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <p>예시에서 보듯이 &lt;p&gt; 태그안의 요소 내용 뿐만이 아닌 부모 요소인 body 태그가 가지는 width : 100% 값을 너비로 갖는 걸 알 수 있습니다.
+                    또한 줄바꿈을 포함하고 있습니다. 다음 내용은 한 줄 띄어지고 표시됩니다.
+                </p>
+                <h3 style="padding-top : 50px;">인라인 레벨 태그</h3>
+                
                 
             </section>
-            <footer></footer>
+            <footer>
+                <p>바닥 footer 설정</p>
+            </footer>
         </main>
         <div class="side_category"> <!-- 오른쪽 고정 화면 구조 -->
             <p style="color:white;">로그인 직관성,메뉴 등등 개발 예정</p>

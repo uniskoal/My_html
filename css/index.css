@@ -15,6 +15,13 @@ p {
     padding : 15px 0px 15px 0px;
 }
 
+h2 + p {
+    padding-top : 60px;
+}
+
+h3 + p {
+    padding-top : 60px;
+}
 
 html , body { /* 상위 트리에서 전체 100%을 해줘야지 하위 트리가 쓸 수 있다.*/
     width : 100%;
@@ -46,7 +53,6 @@ html , body { /* 상위 트리에서 전체 100%을 해줘야지 하위 트리�
 main { /* float : left 로 왼쪽 배치 */
     float : left;
     width : 77%;
-    height : 100%;
     background-color : white;
     position : relative;
 }
@@ -74,6 +80,12 @@ section {
     font-size : 17px;
     font-weight : bold;
     line-height : 1.5em;
+}
+
+footer {
+    width : 100%;
+    height : 500px;
+    background-color : #70F170;
 }
 
 
